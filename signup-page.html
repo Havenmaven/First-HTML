@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alt School Sign Up</title>
+    
+</head>
+<body>
+    <header>
+        <a href="./index.html">Home</a>
+        <nav>
+            <h2><em>Alt___</br>School</em></h2>
+            <h1><em>Application Form</em></h1>
+        </nav>
+    </header>
+    <main>
+        <p>Fill in your details</p>
+        <form action="submit" required>
+            <div>
+                <label for="First name">First name</label>
+                <input type="text" id="First name" Placeholder=" Enter first name" required>
+            </div>
+            <div>
+                <label for="Last name">Last name</label>
+                <input type="text" id="Last name" Placeholder=" Enter last name" required>
+            </div>
+            <div>
+                <label for="gender">Gender</label>            
+                <select id="gender" name="gender" required> 
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div>
+                <label for="dob" placeholder="Date of Birth">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div>
+                <label for="email" >Email Address</label>
+                <input type="email" id="email" autocomplete="email" required>
+            </div>
+            <div>
+                <label for="Educational level" placeholder="Select level of Education">Educational Level</label>         
+                <select id="Educational level" name="Educational level" required>
+                    <option value="BSC">BSC / BTECH</option>
+                    <option value="MSC">MSC</option>
+                    <option value="Diploma">Diploma</option>
+                    <option value="High School">High School / High School</option>
+                    <option value="Under Graduate">Under Graduate</option>
+                    <option value="Juniour">Junior / Middle School</option>
+                    <option value="Post Graduate">Post Graduate</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="country" placeholder="Select your country">Country</label>
+                <select id="country" name="country" autocomplete="address-line1" required>
+                    <option value="S/Africa">South Africa</option>
+                    <option value="Ghana">Ghana</option>
+                    <option value="nigeria">Nigeria</option>
+                    <option value="Kenya">Kenya</option>
+                    <option value="niger">Niger</option>
+                    <option value="Egypt">Egypt</option>
+                    <option value="usa">United States</option>
+                </select>
+            </div>
+            <div>
+                <label for="city">State/City of Residence</label>
+                <input id="city" type="text" name="City" Placeholder=" Enter your state of residence" required>
+            </div>
+
+            <div>
+                <label for="employment status" placeholder="Select employment status">Employment status</label>
+                <select id="employment status" name="employment status" required> 
+                    <option value="employed">Employed</option>
+                    <option value="unemployed">Unemployed</option>
+                    <option value="self-employed">Self-employed</option>
+                </select>
+            </div>
+            <div>
+                <label for="tel">Phone number</label>
+                <input type="tel" id="tel" name="tel" autocomplete="tel-local" required>
+            </div>
+
+            <div>
+                <label for="school" placeholder="select school">Choose School</label>           
+                <select id="school" name="school" required> 
+                    <option value="economy">School of Creative Economy</option>
+                    <option value="Business">School of Business</option>
+                    <option value="engineering" selected>School of Engineering</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="course" placeholder="select course">Choose Course of Study</label>            
+                <select id="course" name="" required>
+                    <option value="" disabled selected>Select course</option> 
+                    <option value="backend">Backend</option>
+                    <option value="frontend">Frontend</option>
+                    <option value="cloud">Cloud Engineering</option>
+                </select>
+            </div>
+
+            <div>   
+                <label for="media" placeholder="Select channel">How did you hear about us</label>            
+                <select id="media" name="media" required> 
+                    <option value="twitter">Twitter</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="linkedin">Linkedin</option>
+                    <option value="youtube">Youtube</option>
+                    <option value="friend">Friend</option>
+                    <option value="whatsapp">Whatsapp</option>
+                    <option value="instalgram">Instagram</option>
+                    <option value="bill board">Bill Board</option>            
+                </select>
+            </div>
+
+            <div>
+                <label for="discount code">Scholarship/Discount Code (optional)</label>            
+                <input type="text" id="discount code" Placeholder="Scholarship or student ID or discount codes" required>
+            </div>
+
+            <div>
+                By clicking continue, I agree to <a href="#">Terms of use</a> and acknowledge that I have read the <a href="#">Privacy Policy.</a>
+            </div>
+
+            <div>
+                <button class="favorite styled" type="button">Proceed</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div>Already have an account? <a href="#">Sign In</a></div>
+        <button onclick="sendMessage()">
+            <img  src="./img/chat.svg" alt="contact us">
+        </button> 
+    </footer>
+</body>
+</html>
